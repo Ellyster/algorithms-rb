@@ -8,7 +8,7 @@ include Sequences
 describe "Sorting algorithms for sequences" do
 
   before(:each) do
-    @algorithms = %w(bubble_sort insertion_sort selection_sort merge_sort shell_sort)
+    @algorithms = %w(bubble_sort insertion_sort selection_sort merge_sort shell_sort quick_sort)
   end
 
   it "should work with empty arrays" do
