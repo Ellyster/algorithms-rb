@@ -54,8 +54,15 @@ We also provide both __benchmarks__, to ensure performance, and __tests__, to en
 	| Bucket sort | O() | O() | Non-comparison | - |  |
 -->
 
+<br>
 ``Algorithms::Sequences::Search``
 
+| Name  | Time complexity | Space complexity | Strategy | Description |
+| :---- | :-------------: | :--------------: | :------: | :---------- |
+| Linear search | O(n) | - | Naive | Looks at the elements one by one in order |
+| Binart search | O(log n) | - | Divide and Conquer | Repeatedly splits the sequence in two subsections, and choose the one that contains the element |
+
+<br>
 ``Algorithms::Sequences::Merge``
 
 ``Algorithms::Sequences::Subsequence``
