@@ -5,7 +5,6 @@ My Ruby library of algorithms and data structures (for Programming Contests and 
 
 Data Structures
 ===============
-``Structures::Heap``
 
 ``Structures::Stack``
 
@@ -77,13 +76,52 @@ Algorithms
 ``Algorithms::Combinatorial``
 -->
 
-``Algorithms::Geometric``
+``Algorithms::Algebraic``
+- GDC
+- Chinese reminder
 
-``Algorithms::Optimization``
+``Algorithms::Algebraic::Primality``
+- Eratosthenes
+- Pocklington
+- Miller–Rabin
+- Solovay–Strassen
+- Agrawal–Kayal–Saxena
+
+``Algorithms::Geometric``
+- Convex hull
+- Closest pair
+- Segments intersection
+
+<!-- ``Algorithms::Optimization`` -->
 
 ``Algorithms::Graphs``
+- Topological sort
+- Strongly connected components 
 
-``Algorithms::Strings``
+``Algorithms::Graphs::Search`
+- Breadth-first search
+- Depth-first search
+
+``Algorithms::Graphs::Spanning`
+- Kruskal
+- Prim
+
+``Algorithms::Graphs::Shortest``
+- A*
+- Bellman-Ford
+- Dijkstra
+- Floyd-Warshall
+- Johnson
+
+``Algorithms::Graphs::Flow``
+- Ford-Fulkerson
+- Push-relabel
+- Relabel-to-front
+- Bipartite matching
+
+``Algorithms::Strings::Match``
+- Rabin-Karp
+- Knuth-Morris-Pratt
 
 <!---
 ``Algorithms::Puzzles``
