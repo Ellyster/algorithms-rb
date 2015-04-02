@@ -7,11 +7,15 @@
 # Space complexity: O(1) auxiliary
 # Stable: No
 #
-# Description: A generalization of insertion sort that allows the exchange of items that are far apart (gap).
-# Requirements: Needs to be able to compare elements with <, and access them with []
+# Description: A generalization of insertion sort that allows the exchange
+#              of items that are far apart (gap).
+#              [http://en.wikipedia.org/wiki/Shellsort]
+#
+# Requirements: Needs to be able to compare elements with >,
+#               and access them with []
 #
 # Usage:
-#   Algorithms::Sequences::Sort.shell_sort [8, 2, 1, 3, 2, 5] => [1, 2, 2, 3, 5, 8]
+#  Algorithms::Sequences::Sort.shell_sort [8, 2, 1, 3, 2] => [1, 2, 2, 3, 8]
 
 module Algorithms::Sequences::Sort
   module_function

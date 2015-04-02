@@ -7,11 +7,15 @@
 # Space complexity: O(1) auxiliary
 # Stable: No, but it can be stable with O(n) auxiliary space
 #
-# Description: Pick the smallest of the remaining elements, add it to the end of the sorted list.
-# Requirements: Needs to be able to compare elements with <, and access them with []
+# Description: Pick the smallest of the remaining elements, add it to the end
+#              of the sorted list.
+#              [http://en.wikipedia.org/wiki/Selection_sort]
+#
+# Requirements: Needs to be able to compare elements with <,
+#               and access them with []
 #
 # Usage:
-#   Algorithms::Sequences::Sort.selection_sort [8, 2, 1, 3, 2, 5] => [1, 2, 2, 3, 5, 8]
+#  Algorithms::Sequences::Sort.selection_sort [8, 2, 1, 3, 2] => [1, 2, 2, 3, 8]
 
 module Algorithms::Sequences::Sort
   module_function

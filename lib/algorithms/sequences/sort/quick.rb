@@ -7,11 +7,15 @@
 # Space complexity: O(n) auxiliary
 # Stable: No
 #
-# Description: Select a pivot, divide the list into smaller than the pivot, pivot and bigger than the pivot, sort each separately.
-# Requirements: Needs to be able to compare elements with >, and access them with []
+# Description: Select a pivot, divide the list into smaller than the pivot,
+#              pivot and bigger than the pivot, sort each separately.
+#              [http://en.wikipedia.org/wiki/Quicksort]
+#
+# Requirements: Needs to be able to compare elements with <,
+#               and access them with []
 #
 # Usage:
-#   Algorithms::Sequences::Sort.quick_sort [8, 2, 1, 3, 2, 5] => [1, 2, 2, 3, 5, 8]
+#  Algorithms::Sequences::Sort.quick_sort [8, 2, 1, 3, 2] => [1, 2, 2, 3, 8]
 
 module Algorithms::Sequences::Sort
   module_function

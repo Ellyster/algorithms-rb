@@ -8,10 +8,13 @@
 # Stable: Yes
 #
 # Description: For each pair of indices, swap the items if out of order.
-# Requirements: Needs to be able to compare elements with >, and access them with []
+#              [http://en.wikipedia.org/wiki/Bubble_sort]
+#
+# Requirements: Needs to be able to compare elements with >,
+#               and access them with []
 #
 # Usage:
-#   Algorithms::Sequences::Sort.bubble_sort [8, 2, 1, 3, 2, 5] => [1, 2, 2, 3, 5, 8]
+#  Algorithms::Sequences::Sort.bubble_sort [8, 2, 1, 3, 2] => [1, 2, 2, 3, 8]
 
 module Algorithms::Sequences::Sort
   module_function

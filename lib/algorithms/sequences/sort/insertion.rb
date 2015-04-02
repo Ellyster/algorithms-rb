@@ -7,11 +7,15 @@
 # Space complexity: O(1) auxiliary
 # Stable: Yes
 #
-# Description: Determine where the current items belongs in the list of sorted ones and insert it there.
-# Requirements: Needs to be able to compare elements with <, and access them with []
+# Description: Determine where the current items belongs in the list of sorted
+#              ones and insert it there.
+#              [http://en.wikipedia.org/wiki/Insertion_sort]
+#
+# Requirements: Needs to be able to compare elements with <,
+#               and access them with []
 #
 # Usage:
-#   Algorithms::Sequences::Sort.insertion_sort [8, 2, 1, 3, 2, 5] => [1, 2, 2, 3, 5, 8]
+#  Algorithms::Sequences::Sort.insertion_sort [8, 2, 1, 3, 2] => [1, 2, 2, 3, 8]
 
 module Algorithms::Sequences::Sort
   module_function
