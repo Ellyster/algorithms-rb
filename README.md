@@ -60,7 +60,7 @@ We also provide both __benchmarks__, to ensure performance, and __tests__, to en
 | Name  | Time complexity | Space complexity | Strategy | Description |
 | :---- | :-------------: | :--------------: | :------: | :---------- |
 | Linear search | O(n) | O(1) | Naive | Looks at the elements one by one in order |
-| Binart search | O(log n) | O(1) | Divide and Conquer | Repeatedly splits the sequence in two subsections, and choose the one that contains the element |
+| Binary search | O(log n) | O(1) | Divide and Conquer | Repeatedly splits the sequence in two subsections, and choose the one that contains the element |
 
 <br>
 ``Algorithms::Sequences::Merge``
