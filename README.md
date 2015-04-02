@@ -1,11 +1,17 @@
-algorithms-rb
-======
+# algorithms-rb
 
-My Ruby library of algorithms and data structures (for Programming Contests and teaching purposes).
+A library of basic and advanced algorithms and data structures in Ruby.
 
-Data Structures
-===============
-``Structures::Heap``
+This library is programm to be used as a code examples in any algorithmic and data structure course (from 101-level to graduate-level) given in Ruby. Aiming to use Ruby's neatness to provide implemantations close to the studied pseudocode, but still being efficient.
+
+Another intended use of the library are programming contests, where Ruby mostly due to the absence of an standarized library for advance data structures and advance algorithms, is not being widely used (even among rubists).
+
+We also provide both __benchmarks__, to ensure performance, and __tests__, to ensure correctness.
+
+
+## Contents
+
+#### Data Structures
 
 ``Structures::Stack``
 
@@ -23,10 +29,9 @@ Data Structures
 
 ``Structures::BinaryTree``
 
-``Structures::BackRedTree``
+``Structures::BlackRedTree``
 
-Algorithms
-==========
+#### Algorithms
 
 ``Algorithms::Sequences::Sort``
 
@@ -38,6 +43,8 @@ Algorithms
 | Bubble sort | О(n^2) | О(1) | Exchange | For each pair of indices, swap the items if out of order |
 | Quick sort | O(n log n)* | O(log n) | Exchange | Select a pivot, divide the list into smaller than the pivot, pivot and bigger than the pivot, sort each separately  |
 | Selection sort | O(n^2) | O(1) | Selection | Pick the smallest of the remaining elements, add it to the end of the sorted list |
+
+(*) In the Quick sort case, average complexity is more representative than worst case complexity
 
 <!--
 	| Comb sort | O() | O() | Exchange | - |  |
@@ -77,13 +84,52 @@ Algorithms
 ``Algorithms::Combinatorial``
 -->
 
-``Algorithms::Geometric``
+``Algorithms::Algebraic``
+- GDC
+- Chinese reminder
 
-``Algorithms::Optimization``
+``Algorithms::Algebraic::Primality``
+- Eratosthenes
+- Pocklington
+- Miller–Rabin
+- Solovay–Strassen
+- Agrawal–Kayal–Saxena
+
+``Algorithms::Geometric``
+- Convex hull
+- Closest pair
+- Segments intersection
+
+<!-- ``Algorithms::Optimization`` -->
 
 ``Algorithms::Graphs``
+- Topological sort
+- Strongly connected components 
 
-``Algorithms::Strings``
+``Algorithms::Graphs::Search``
+- Breadth-first search
+- Depth-first search
+
+``Algorithms::Graphs::Spanning``
+- Kruskal
+- Prim
+
+``Algorithms::Graphs::Shortest``
+- A*
+- Bellman-Ford
+- Dijkstra
+- Floyd-Warshall
+- Johnson
+
+``Algorithms::Graphs::Flow``
+- Ford-Fulkerson
+- Push-relabel
+- Relabel-to-front
+- Bipartite matching
+
+``Algorithms::Strings::Match``
+- Rabin-Karp
+- Knuth-Morris-Pratt
 
 <!---
 ``Algorithms::Puzzles``
