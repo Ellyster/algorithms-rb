@@ -11,6 +11,10 @@ describe "Sorting algorithms for sequences" do
     @algorithms = %w(bubble_sort insertion_sort selection_sort merge_sort shell_sort quick_sort)
   end
 
+  it "should return nil with no array" do
+    @algorithms.each { |name| expect(Sort.send(name, nil)).to eq(nil) }
+  end
+
   it "should work with empty arrays" do
     @algorithms.each { |name| expect(Sort.send(name, [])).to eq([]) }
   end

@@ -21,6 +21,7 @@ module Algorithms::Sequences::Sort
   module_function
 
   def selection_sort (sequence)
+    return nil if sequence.nil?
 
     for i in 0..sequence.size-1 do
       min_pos = i

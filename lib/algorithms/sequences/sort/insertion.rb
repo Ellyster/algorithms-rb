@@ -21,6 +21,7 @@ module Algorithms::Sequences::Sort
   module_function
 
   def insertion_sort (sequence)
+    return nil if sequence.nil?
     return sequence if sequence.size < 2
 
     for i in 1..sequence.size-1 do

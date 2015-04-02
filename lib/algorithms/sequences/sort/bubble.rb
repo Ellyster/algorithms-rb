@@ -20,6 +20,8 @@ module Algorithms::Sequences::Sort
   module_function
 
   def bubble_sort (sequence)
+    return nil if sequence.nil?
+    
     swapped = true
 
     while swapped

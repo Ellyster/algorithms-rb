@@ -21,6 +21,7 @@ module Algorithms::Sequences::Sort
   module_function
 
   def merge_sort (sequence)
+    return nil if sequence.nil?
     return sequence if sequence.size <= 1
 
     mid_pos = sequence.size/2

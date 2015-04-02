@@ -21,6 +21,8 @@ module Algorithms::Sequences::Sort
   module_function
 
   def shell_sort (sequence)
+    return nil if sequence.nil?
+    
     gap = sequence.size/2
 
     while gap > 0 do

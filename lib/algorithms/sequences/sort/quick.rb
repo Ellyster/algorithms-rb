@@ -21,6 +21,8 @@ module Algorithms::Sequences::Sort
   module_function
 
   def quick_sort(sequence)
+    return nil if sequence.nil?
+    
     quicksort(sequence,0,sequence.size-1)
 
     sequence
