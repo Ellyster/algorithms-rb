@@ -10,6 +10,9 @@ module Algorithms
     module Sort
 
     end
+    module Search
+
+    end
   end
 end
 

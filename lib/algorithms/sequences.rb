@@ -5,3 +5,4 @@
 # Require all implemented algorithms for sequences
 
 require_relative 'sequences/sort.rb'
+require_relative 'sequences/search.rb'
