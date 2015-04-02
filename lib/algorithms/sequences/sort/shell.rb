@@ -16,26 +16,26 @@
 module Algorithms::Sequences::Sort
   module_function
 
-    def shell_sort (sequence)
-      gap = sequence.size/2
+  def shell_sort (sequence)
+    gap = sequence.size/2
 
-      while gap > 0 do
-        for i in gap..sequence.size-1 do
-          candidate = sequence[i]
-          j = i
+    while gap > 0 do
+      for i in gap..sequence.size-1 do
+        candidate = sequence[i]
+        j = i
 
-          while j >= gap && sequence[j - gap] > candidate do
-            sequence[j] = sequence[j - gap]
-            j = j-gap
-          end
-
-          sequence[j] = candidate
+        while j >= gap && sequence[j - gap] > candidate do
+          sequence[j] = sequence[j - gap]
+          j -= gap
         end
 
-        gap = (gap == 1 ? 0 : (gap / 2).round)
+        sequence[j] = candidate
       end
 
-      sequence
+      gap = (gap == 1 ? 0 : (gap / 2).round)
     end
+
+    sequence
+  end
 
 end

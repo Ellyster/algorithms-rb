@@ -16,19 +16,19 @@
 module Algorithms::Sequences::Sort
   module_function
 
-    def selection_sort (sequence)
+  def selection_sort (sequence)
 
-      for i in 0..sequence.size-1 do
-        min_pos = i
+    for i in 0..sequence.size-1 do
+      min_pos = i
 
-        for j in i+1..sequence.size-1 do
-          min_pos = j if sequence[j] < sequence[min_pos]
-        end
-
-        sequence[i], sequence[min_pos] = sequence[min_pos], sequence[i]
+      for j in i+1..sequence.size-1 do
+        min_pos = j if sequence[j] < sequence[min_pos]
       end
 
-      sequence
+      sequence[i], sequence[min_pos] = sequence[min_pos], sequence[i]
     end
+
+    sequence
+  end
 
 end

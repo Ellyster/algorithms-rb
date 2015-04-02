@@ -16,22 +16,22 @@
 module Algorithms::Sequences::Sort
   module_function
 
-    def insertion_sort (sequence)
-      return sequence if sequence.size < 2
+  def insertion_sort (sequence)
+    return sequence if sequence.size < 2
 
-      for i in 1..sequence.size-1 do
-        candidate = sequence[i]
-        j = i-1
+    for i in 1..sequence.size-1 do
+      candidate = sequence[i]
+      j = i-1
 
-        while j >= 0 && sequence[j] > candidate do
-          sequence[j+1] = sequence[j]
-          j = j-1
-        end
-
-        sequence[j+1] = candidate
+      while j >= 0 && sequence[j] > candidate do
+        sequence[j+1] = sequence[j]
+        j -= 1
       end
 
-      sequence
+      sequence[j+1] = candidate
     end
+
+    sequence
+  end
 
 end

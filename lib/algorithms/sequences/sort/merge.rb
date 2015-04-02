@@ -15,6 +15,7 @@
 
 module Algorithms::Sequences::Sort
   module_function
+
   def merge_sort (sequence)
     return sequence if sequence.size <= 1
 
