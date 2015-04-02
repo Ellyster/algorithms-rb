@@ -2,9 +2,9 @@
 
 A library of basic and advanced algorithms and data structures in Ruby.
 
-This library is programm to be used as a code examples in any algorithmic and data structure course (from 101-level to graduate-level) given in Ruby. Aiming to use Ruby's neatness to provide implemantations close to the studied pseudocode, but still being efficient.
+This library is programmed to be used as a code examples in any algorithmic or/and data structures course (from 101-level to graduate-level) given in Ruby. We aim to use Ruby's neatness to provide implemantations close to the studied pseudocode, but still being efficient enough.
 
-Another intended use of the library are programming contests, where Ruby mostly due to the absence of an standarized library for advance data structures and advance algorithms, is not being widely used (even among rubists).
+Another intended use of the library are programming contests where Ruby, mostly due to the absence of an standarized library for advance data structures and advance algorithms, is not being widely used (even among veteran rubists).
 
 We also provide both __benchmarks__, to ensure performance, and __tests__, to ensure correctness.
 
