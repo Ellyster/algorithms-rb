@@ -62,6 +62,12 @@ We also provide both __benchmarks__, to ensure performance, and __tests__, to en
 	| Bucket sort | O() | O() | Non-comparison | - |  |
 -->
 
+- Comb sort
+- Cocktail sort
+- Heap sort
+- Smooth sort
+- Bucket sort
+
 <br>
 ``Algorithms::Sequences::Search``
 
@@ -72,6 +78,8 @@ We also provide both __benchmarks__, to ensure performance, and __tests__, to en
 <!--
 | Selection search | O(n) | k + O(1) | - | - |
 -->
+
+- Selection search
 
 (*) Binary search requires an ordered sequence.
 
