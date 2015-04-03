@@ -7,13 +7,13 @@
 
 module Algorithms
   module Sequences
-    module Sort
-
-    end
-    module Search
-
-    end
+    module Sort; end
+    module Search; end
+  end
+  module Algebraic
+    module Primality; end
   end
 end
 
 require_relative 'algorithms/sequences.rb'
+require_relative 'algorithms/algebraic.rb'

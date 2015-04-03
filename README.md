@@ -13,6 +13,10 @@ We also provide both __benchmarks__, to ensure performance, and __tests__, to en
 
 #### Data Structures
 
+``Structures::Heap``
+
+``Structures::FibonacciHeap``
+
 ``Structures::Stack``
 
 ``Structures::Queue``
@@ -29,7 +33,11 @@ We also provide both __benchmarks__, to ensure performance, and __tests__, to en
 
 ``Structures::BinaryTree``
 
-``Structures::BlackRedTree``
+``Structures::RedBlackTree``
+
+``Structures::AVLTree``
+
+``Structures::BTree``
 
 #### Algorithms
 
@@ -49,7 +57,7 @@ We also provide both __benchmarks__, to ensure performance, and __tests__, to en
 <!--
 	| Comb sort | O() | O() | Exchange | - |  |
 	| Cocktail sort | O() | O() | Exchange | - |  |
-	| Heap sort | O() | O() | Selection | Convert the list into a heap, keep removing the largest element from the heap and adding it to the end of the list |  |
+	| Heap sort | O(n log n) | O(1) | Selection | Convert the list into a heap, keep removing the largest element from the heap and adding it to the end of the list |  |
 	| Radix sort | O() | O() | Non-comparison | Sorts strings letter by letter |  |
 	| Bucket sort | O() | O() | Non-comparison | - |  |
 -->
@@ -118,10 +126,14 @@ We also provide both __benchmarks__, to ensure performance, and __tests__, to en
 - Chinese reminder
 
 ``Algorithms::Algebraic::Primality``
+
+| Name  | Time complexity | Space complexity | Strategy | Description |
+| :---- | :-------------: | :--------------: | :------: | :---------- |
+| Solovay–Strassen primality test | O(k log^3 n) | O(1) | Randomized | Selects random numbers and checks if they are relatively primes with the candidate using the Jacobi symbol|
+
 - Eratosthenes
 - Pocklington
 - Miller–Rabin
-- Solovay–Strassen
 - Agrawal–Kayal–Saxena
 
 ``Algorithms::Geometric``
