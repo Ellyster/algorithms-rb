@@ -60,33 +60,55 @@ We also provide both __benchmarks__, to ensure performance, and __tests__, to en
 | Name  | Time complexity | Space complexity | Strategy | Description |
 | :---- | :-------------: | :--------------: | :------: | :---------- |
 | Linear search | O(n) | O(1) | Naive | Looks at the elements one by one in order |
-| Binary search | O(log n) | O(1) | Divide and Conquer | Repeatedly splits the sequence in two subsections, and choose the one that contains the element |
+| Binary search | O(log n)* | O(1) | Divide and Conquer | Repeatedly splits the sequence in two subsections, and choose the one that contains the element |
+<!--
+| Selection search | O(n) | k + O(1) | - | - |
+-->
+
+(*) Binary search requires an ordered sequence.
 
 <br>
 ``Algorithms::Sequences::Merge``
+- Simple merge
+- K-way merge
+- Union
 
 ``Algorithms::Sequences::Subsequence``
+- Kadane
+- Longest common subsequence
+- Longest increasing subsequence
+- Shortest common supersequence
 
 ``Algorithms::Sequences::Permutation``
+- Fisher–Yates shuffle
+- Schensted
+- Steinhaus–Johnson
+- Heap's permutation generation
+
+``Algorithms::Sequences::Alignment``
+- Dynamic time warping
+- Hirschberg
+- Needleman–Wunsch
+- Smith–Waterman
 
 <!---
 ``Algorithms::Numerical``
 
-	- Matrix multiplication
-	- Eigenvalue finding
-	- Exponentiation
-	- N-th Root
-	- Linear equation system solving
-	- Differential equation solving
-	- Root finding
+- Matrix multiplication
+- Eigenvalue finding
+- Exponentiation
+- N-th Root
+- Linear equation system solving
+- Differential equation solving
+- Root finding
 
 ``Algorithms::Algebraic``
 
-	- Greatest Common Divisor (GCD)
-	- Multiplication
-	- Integer factorization
-	- Primalirty testing
-	- Discrete logarithm
+- Greatest Common Divisor (GCD)
+- Multiplication
+- Integer factorization
+- Primalirty testing
+- Discrete logarithm
 
 ``Algorithms::Combinatorial``
 -->
@@ -103,26 +125,42 @@ We also provide both __benchmarks__, to ensure performance, and __tests__, to en
 - Agrawal–Kayal–Saxena
 
 ``Algorithms::Geometric``
-- Convex hull
 - Closest pair
-- Segments intersection
+- Nearest neighbor
+
+``Algorithms::Geometric::Hull``
+- Graham scan
+- Quickhull
+- Gift wrapping
+- Chan
+- Kirkpatrick–Seidel
+
+<!--
+``Algorithms::Geometric::Distances``
+-->
+
+``Algorithms::Geometric::Intersection``
+- Bentley–Ottmann
+- Shamos–Hoey
+
 
 <!-- ``Algorithms::Optimization`` -->
 
 ``Algorithms::Graphs``
 - Topological sort
-- Strongly connected components 
+- Strongly connected components
 
 ``Algorithms::Graphs::Search``
 - Breadth-first search
 - Depth-first search
+- Uniform cost search
+- A* search
 
 ``Algorithms::Graphs::Spanning``
 - Kruskal
 - Prim
 
 ``Algorithms::Graphs::Shortest``
-- A*
 - Bellman-Ford
 - Dijkstra
 - Floyd-Warshall
@@ -135,8 +173,16 @@ We also provide both __benchmarks__, to ensure performance, and __tests__, to en
 - Bipartite matching
 
 ``Algorithms::Strings::Match``
+- Aho–Corasick
+- Boyer–Moore
+- Boyer–Moore–Horspool
 - Rabin-Karp
 - Knuth-Morris-Pratt
+- Zhu–Takaoka
+
+``Algorithms::Strings::Sort``
+- Radix sort
+
 
 <!---
 ``Algorithms::Puzzles``
