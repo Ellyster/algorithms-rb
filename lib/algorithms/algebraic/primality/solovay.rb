@@ -5,6 +5,9 @@
 # Algorithm: Solovay–Strassen primality test
 # Invented by: Robert M. Solovay and Volker Strassen
 #
+# Time complexity: O(k log^3 n)
+# Space complexity: O(1) auxiliary
+# Accuracy: 1/2
 #
 # Description: Selects random numbers and calculates the Jacobi symbol with the
 #              candidate, O((log n)²) checking if they are relatively primes.
@@ -37,7 +40,7 @@ module Algorithms::Algebraic::Primality
 
     end
 
-    return true
+    return true                          # "Probably prime"
   end
 
   # Algorithm 2.149 from "Handbook of Applied Cryptography"

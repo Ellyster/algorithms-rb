@@ -5,3 +5,4 @@
 # Require all implemented primality algorithms
 
 require_relative 'primality/solovay.rb'
+require_relative 'primality/miller.rb'

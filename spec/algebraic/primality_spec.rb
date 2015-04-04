@@ -8,7 +8,7 @@ include Algebraic
 describe "Primality tests for integers" do
 
   before(:each) do
-    @algorithms = %w(solovay_strassen)
+    @algorithms = %w(solovay_strassen miller_rabin)
   end
 
 

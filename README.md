@@ -127,13 +127,13 @@ We also provide both __benchmarks__, to ensure performance, and __tests__, to en
 
 ``Algorithms::Algebraic::Primality``
 
-| Name  | Time complexity | Space complexity | Strategy | Description |
-| :---- | :-------------: | :--------------: | :------: | :---------- |
-| Solovay–Strassen primality test | O(k log^3 n) | O(1) | Randomized | Selects random numbers and checks if they are relatively primes with the candidate using the Jacobi symbol|
+| Name  | Time complexity | Space complexity | Strategy | Accuracy | Description |
+| :---- | :-------------: | :--------------: | :------: | :------: | :---------- |
+| Solovay–Strassen primality test | O(k log^3 n) | O(1) | Randomized | 1/2 | Selects random numbers and checks if they are relatively primes with the candidate using the Jacobi symbol|
+| Miller–Rabin primality test | O(k log^3 n) | O(1) | Randomized | 3/4 | Selects random numbers and checks if they are relatively primes with the candidate using the Jacobi symbol|
 
 - Eratosthenes
 - Pocklington
-- Miller–Rabin
 - Agrawal–Kayal–Saxena
 
 ``Algorithms::Geometric``
